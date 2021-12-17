@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const app = express();
 
-require("./src/routes/routes")(app);
+require("./src/routes/routes");
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => `Project-Lowkey server is listening on port ${port}`);
