@@ -1,7 +1,7 @@
 const express = require("express");
 const users = require("../controllers/users");
-const categories = require("../controllers/users");
-const locations = require("../controllers/users");
+const categories = require("../controllers/categories");
+const locations = require("../controllers/locations");
 
 module.exports = function (app) {
     app.use(express.json());
