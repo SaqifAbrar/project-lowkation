@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 
 const app = express();
 
-app.get("/", (res, req) => {
+app.get("/", (req, res) => {
     const locations = [
         {
             id: 1,
