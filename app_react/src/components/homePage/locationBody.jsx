@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import LocationRow from "./locationRow";
-import Locations from "../../temp/locations.json";
 import axios from "axios";
 
 class LocationBody extends Component {
