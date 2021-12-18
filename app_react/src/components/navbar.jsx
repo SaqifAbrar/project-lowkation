@@ -8,6 +8,8 @@ function NavBar() {
             <div className="navbar">
                 {/* make a div for pic - 70%, div for links - 30% */}
                 <div className="logo-section">
+                    {/* <a href="/home"/> */}
+                    {/* <Link to="/home" className="navbar-links"/> */}
                     <img
                         className="logo"
                         src=" https://drive.google.com/thumbnail?id=1Ehc2G0_ScgvhFWMNiXVX4y6vcEinekLR"
