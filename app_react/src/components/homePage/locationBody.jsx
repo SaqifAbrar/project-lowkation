@@ -13,7 +13,7 @@ class LocationBody extends Component {
 
     componentDidMount() {
         console.log("mounted");
-        axios.get("/api").then((res) => {
+        axios.get("/api/locations").then((res) => {
             console.log(res);
             this.setState({ locations: res.data }, () => {
                 console.log("Successfully set stated");
