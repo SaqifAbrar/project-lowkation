@@ -7,16 +7,16 @@ function HeroBanner() {
             <div className="hero-banner-wrapper">
                 <img
                     className="skyline"
-                    src=" https://drive.google.com/thumbnail?id=1sQXpOQhqGXnDQ3qQvPS2o6ThqgwVMTW7"
+                    src=" https://drive.google.com/thumbnail?id=15JxvAGMAKTI9H-_lWCQsRMH2M_ckTVEC"
                     alt="skyline"
                 />
 
                 <img
-                    className="heroBanner"
-                    src=" https://drive.google.com/thumbnail?id=AjWsLbsinNCuYRDbfegMIQRo6NitwXs5"
-                    alt="heroBanner"
+                    className="mapping"
+                    src=" https://drive.google.com/thumbnail?id=1AjWsLbsinNCuYRDbfegMIQRo6NitwXs5"
+                    alt="Map Ping"
                 />
-                <h1>This is the landing page</h1>
+                <h1>GateKeeping LowKations 101</h1>
             </div>
         </div>
     );
