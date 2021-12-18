@@ -25,4 +25,5 @@
 
 .App-scroll {
     scroll-behavior: smooth;
+    /* position: relative; */
 }

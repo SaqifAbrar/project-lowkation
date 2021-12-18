@@ -1,22 +1,35 @@
 .navbar {
-    background-color: #000000;
+    background-color: #0f0e0e;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 } /*background*/
 
-hr {
-    width: 70%;
-    text-align: center;
-    margin-left: 160px;
-} /*the line beneath header*/
-
-h1 {
-    color: white;
-    font-size: 20px;
-} /*this is the navbar titles*/
+.link-section {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
 
 .navbar-links {
     text-decoration: none;
-    color: aqua;
-    text-align: right;
+    color: rgb(255, 255, 255);
     margin-right: 30px;
-    align-items: right;
+    font-size: large;
+    font-weight: medium;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    padding: 0.5%;
 }
