@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "../../temp/test.jpeg";
 import TagBadge from "./tagBadge";
-import "./styles/locationCard.css";
+import "./locationCard.css";
 
 const LocationCard = ({ place, label }) => {
     console.log(label);

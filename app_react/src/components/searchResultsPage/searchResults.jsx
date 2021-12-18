@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import SearchResultsBody from "./searchResultsBody";
 
 class SearchResults extends Component {
     render() {
-        return <h1>This is the search results page</h1>;
+        return (
+            <div className="searchResults-body-container">
+                <SearchResultsBody />
+            </div>
+        );
     }
 }
 
