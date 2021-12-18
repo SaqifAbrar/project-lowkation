@@ -25,7 +25,12 @@ class LocationBody extends Component {
         const { locations } = this.state;
         return (
             <div className="location-body-container">
-                <LocationRow locations={locations} />
+                <LocationRow locations={locations} label={"top-locations"} />
+                <LocationRow
+                    locations={locations}
+                    label={"recommended-locations"}
+                />
+                <LocationRow locations={locations} label={"viewed-locations"} />
             </div>
         );
     }

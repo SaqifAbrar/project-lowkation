@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import HeroBanner from "./heroBanner";
 import LocationBody from "./locationBody";
+import "./styles/landing.css";
+import "./styles/locationCard.css";
+import "./styles/locationRow.css";
 
 class Landing extends Component {
     render() {
         return (
-            <div>
+            <div className="landing-body-container">
                 {/*<Link to="/home"></Link>*/}
                 <HeroBanner />
                 <LocationBody />
