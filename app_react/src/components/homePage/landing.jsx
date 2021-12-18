@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import NavBar from "./navbar";
+import HeroBanner from "./heroBanner";
+import LocationBody from "./locationBody";
 
 class Landing extends Component {
     render() {
         return (
             <div>
-                <Link to="/home"></Link>
-                <NavBar />
-                <h1>This is the landing page</h1>
+                {/*<Link to="/home"></Link>*/}
+                <HeroBanner />
+                <LocationBody />
             </div>
         );
     }

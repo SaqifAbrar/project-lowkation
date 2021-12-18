@@ -1,0 +1,9 @@
+.location-card {
+    width: 15%;
+    margin: 0px;
+    border-radius: 15px;
+}
+
+.top-locations {
+    background: linear-gradient(234.5deg, #ffb800 24.46%, #fff2b3 98.43%);
+}
