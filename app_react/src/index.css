@@ -1,13 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+    --main-bg-color: #161515;
+    --main-text-color: #ffffff;
+    --main-header-font: "Advent Pro", sans-serif;
+    --main-text-font: "Roboto", sans-serif;
+    --top-locations-color: linear-gradient(
+        234.5deg,
+        #ffb800 24.46%,
+        #fff2b3 98.43%
+    );
+    --recommended-locations-color: linear-gradient(
+        234.5deg,
+        #00f0ff 24.46%,
+        #b3fff6 90.56%
+    );
+    --viewed-locations-color: linear-gradient(
+        234.5deg,
+        #ff2e00 24.46%,
+        #e793d9 83.87%
+    );
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }

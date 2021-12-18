@@ -1,31 +1,12 @@
 const express = require("express");
 const dotenv = require("dotenv");
-
 const app = express();
+const locationRoutes = require("./src/routes/locationRoutes");
 
-app.get("/api", (req, res) => {
-    const locations = [
-        {
-            id: 1,
-            name: "Reynolds Building",
-            location: "123 Alumni Walk",
-        },
-        {
-            id: 2,
-            name: "Reynolds Building",
-            location: "123 Alumni Walk",
-        },
-        {
-            id: 3,
-            name: "Reynolds Building",
-            location: "123 Alumni Walk",
-        },
-    ];
+// location routes
+app.use("/api/locations", locationRoutes);
 
-    console.log("sending data");
-
-    res.send(locations);
-});
-
-app.listen(5000, () => "Project-Lowkey server is listening on port 5000");
-
+const port = process.env.PORT || 5000;
+app.listen(port, () =>
+    console.log(`Project-Lowkey server is listening on port ${port}`)
+);

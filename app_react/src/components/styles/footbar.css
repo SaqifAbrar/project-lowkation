@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*CUSTOM FONTS*/
+/* @font-face {
+    font-family: appname;
+    src: url("/static/css/fonts/Hanged\ Letters.ttf");
+}
+@font-face {
+    font-family: screentext;
+    src: url("/static/css/fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf");
+} */
+
+hr {
+    width: 70%;
+    text-align: center;
+    margin-left: 160px;
+} /*the line beneath header*/
+
+.footbar {
+    background-color: #000000;
+} /*background*/
+
+h1 {
+    color: white;
+    font-size: 100px;
+    text-align-last: center;
+} /*this is the navbar titles*/
