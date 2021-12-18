@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #000000;
+} /*background*/
+
+hr {
+    width: 70%;
+    text-align: center;
+    margin-left: 160px;
+} /*the line beneath header*/
+
+h1 {
+    color: white;
+    font-size: 20px;
+} /*this is the navbar titles*/
+
+.navbar-links {
+    text-decoration: none;
+    color: aqua;
+    text-align: right;
+    margin-right: 30px;
+    align-items: right;
+}
