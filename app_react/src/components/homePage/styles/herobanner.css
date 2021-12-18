@@ -1,9 +1,51 @@
-.skyline {
-    width: 30%;
-    align-items: center;
+.hero-underlay {
+    position: relative;
 }
 
-.heroBanner {
-    width: 30%;
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    top: clamp(150px, 20%, 400px);
+    left: 0;
+    align-content: center;
+}
+
+.hero-overlay-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.skyline {
+    width: 100%;
     align-items: center;
+    filter: blur(4px);
+}
+
+.mapping {
+    height: 100%;
+    align-items: left;
+}
+
+.bg-ping {
+    padding-left: 10%;
+}
+
+.hero-title {
+    font-family: Advent Pro;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 400%;
+    align-self: right;
+}
+
+.title-desc {
+    padding-top: 2.5%;
+}
+.intro-para {
+    font-size: large;
+}
+
+.description {
+    padding-right: 20%;
+    padding-left: 20%;
 }
