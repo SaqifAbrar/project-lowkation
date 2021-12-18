@@ -4,9 +4,6 @@ const app = express();
 
 require("./src/routes/routes");
 
-const port = process.env.PORT || 5000;
-app.listen(port, () => `Project-Lowkey server is listening on port ${port}`);
-
 app.get("/api", (req, res) => {
     const locations = [
         {
@@ -40,3 +37,8 @@ app.get("/api", (req, res) => {
 
     res.send(locations);
 });
+
+const port = process.env.PORT || 5000;
+app.listen(port, () =>
+    console.log(`Project-Lowkey server is listening on port ${port}`)
+);
