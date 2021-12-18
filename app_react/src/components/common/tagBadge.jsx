@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/tagBadge.css";
+import "./tagBadge.css";
 
 const TagBadge = ({ tag }) => {
     //console.log(tagId);

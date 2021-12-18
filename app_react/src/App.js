@@ -5,6 +5,7 @@ import FootBar from "./components/footbar";
 import Location from "./components/location";
 import Landing from "./components/homePage/landing";
 import Search from "./components/searchPage/search";
+import Lowkation from "./components/locationPage/lowkation";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Routes>
                 <Route path="/home" element={<Landing />} />
                 <Route path="/search" element={<Search />} />
+                {/*<Route path="/location" element={<Lowkation />} />*/}
                 <Route path="/" element={<Navigate replace to="/home" />} />
             </Routes>
             <FootBar />
