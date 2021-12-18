@@ -1,5 +1,5 @@
 import React from "react";
-import LocationCard from "./locationCard";
+import LocationCard from "../common/locationCard";
 import "./styles/locationRow.css";
 
 const LocationRow = ({ locations, label }) => {
