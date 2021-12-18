@@ -5,18 +5,40 @@ function HeroBanner() {
     return (
         <div className="hero-banner-container">
             <div className="hero-banner-wrapper">
-                <img
-                    className="skyline"
-                    src=" https://drive.google.com/thumbnail?id=1sQXpOQhqGXnDQ3qQvPS2o6ThqgwVMTW7"
-                    alt="skyline"
-                />
-
-                <img
-                    className="heroBanner"
-                    src=" https://drive.google.com/thumbnail?id=AjWsLbsinNCuYRDbfegMIQRo6NitwXs5"
-                    alt="heroBanner"
-                />
-                <h1>This is the landing page</h1>
+                <div className="hero-underlay">
+                    <img
+                        className="skyline"
+                        src=" https://drive.google.com/thumbnail?id=1lWs9BdiA9jPehKblw7aMwVcIYyRof1nW"
+                        alt="skyline"
+                    />
+                </div>
+                <div className="hero-overlay">
+                    <div className="hero-overlay-wrapper">
+                        <div className="bg-ping">
+                            <img
+                                className="mapping"
+                                src=" https://drive.google.com/thumbnail?id=1AjWsLbsinNCuYRDbfegMIQRo6NitwXs5"
+                                alt="Map Ping"
+                            />
+                        </div>
+                        <div className="title-desc">
+                            <h1 className="hero-title">
+                                GateKeeping LowKations 101
+                            </h1>
+                            <div className="description">
+                                <p className="into-para">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In imperdiet sem a accumsan
+                                    varius. Sed id laoreet sapien, ut
+                                    scelerisque elit. Mauris rutrum felis arcu,
+                                    ut efficitur quam rutrum facilisis. Duis
+                                    euismod justo cu consectetur scelerisque.
+                                    Praesent aliquam ut arcu a faucibus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
