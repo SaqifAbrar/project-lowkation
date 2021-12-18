@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.location-card {
+    --location-info-space: 5%;
+}
 
 .location-card {
-    width: 15%;
+    width: 15%; /* add clamp */
     margin: 0px;
 
     display: flex;
@@ -13,7 +14,7 @@
 }
 
 .location-image-container {
-    width: 100%;
+    width: auto;
     height: 100%;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
@@ -25,24 +26,43 @@
     object-fit: cover;
 }
 
+.location-info-container {
+    width: auto;
+    margin: 15px;
+}
+
 .location-name {
-    font-family: "Advent Pro", sans-serif;
+    font-family: var(--main-header-font);
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .location-place {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-text-font);
+}
+
+.location-description {
+    padding-top: var(--location-info-space);
+    font-family: var(--main-text-font);
+    font-size: 13px;
+}
+
+.location-tag-container {
+    width: auto;
+    display: flex;
+    padding-top: var(--location-info-space);
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .top-locations {
-    background: linear-gradient(234.5deg, #ffb800 24.46%, #fff2b3 98.43%);
-    /*linear-gradient(234.5deg, #ffb800 24.46%, #fff2b3 98.43%)*/
-    /*GRADIENT NOT WORKING*/
+    background: var(--top-locations-color);
 }
 
 .recommended-locations {
-    background: linear-gradient(234.5deg, #00f0ff 24.46%, #b3fff6 90.56%);
+    background: var(--recommended-locations-color);
 }
 
 .viewed-locations {
-    background: linear-gradient(234.5deg, #ff2e00 24.46%, #e793d9 83.87%);
+    background: var(--viewed-locations-color);
 }
