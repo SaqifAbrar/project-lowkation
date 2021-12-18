@@ -1,0 +1,10 @@
+.location-row-container {
+    width: 100%;
+    /*display: flex;*/
+}
+
+.location-row-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
