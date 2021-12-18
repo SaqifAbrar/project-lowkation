@@ -1,10 +1,15 @@
 .location-row-container {
     width: 100%;
-    /*display: flex;*/
+    margin: 5% 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
 }
 
 .location-row-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 3%;
 }
