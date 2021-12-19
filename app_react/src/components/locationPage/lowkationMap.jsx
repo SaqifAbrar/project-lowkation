@@ -8,16 +8,13 @@ class LowkationMap extends Component {
 
     initMap = () => {
         const map = new window.google.maps.Map(document.getElementById("map"), {
-            center: { lat: -34.397, lng: 150.644 },
+            center: { lat: 40.3399, lng: 127.5101 },
             zoom: 8,
         });
     };
 
     renderMap = () => {
         const apiKey = process.env.REACT_APP_API_KEY;
-        const apiURL = process.env.REACT_APP_API_URL;
-
-        console.log(apiKey);
 
         loadScript(
             `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`
