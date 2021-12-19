@@ -1,5 +1,5 @@
 .location-card {
-    --location-info-space: 5%;
+    --location-info-space: 2%;
 }
 
 .location-card {
@@ -22,27 +22,28 @@
 
 .location-image {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
 .location-info-container {
     width: auto;
-    margin: 15px;
+    margin: 10px; /* border within golden card*/
 }
 
 .location-name {
     font-family: var(--main-header-font);
     font-size: 20px;
-    font-weight: 900;
+    font-weight: bolder;
 }
 
 .location-place {
     font-family: var(--main-text-font);
+    font-style: italic;
 }
 
 .location-description {
-    padding-top: var(--location-info-space);
+    /* padding-top: var(--location-info-space); */
     font-family: var(--main-text-font);
     font-size: 13px;
 }
@@ -50,7 +51,7 @@
 .location-tag-container {
     width: auto;
     display: flex;
-    padding-top: var(--location-info-space);
+    /* padding-top: var(--location-info-space); */
     flex-direction: row;
     justify-content: space-between;
 }

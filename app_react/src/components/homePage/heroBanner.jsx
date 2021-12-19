@@ -17,7 +17,7 @@ function HeroBanner() {
                         <div className="bg-ping">
                             <img
                                 className="mapping"
-                                src=" https://drive.google.com/thumbnail?id=1AjWsLbsinNCuYRDbfegMIQRo6NitwXs5"
+                                src=" https://drive.google.com/thumbnail?id=1XLGpEUn8tziN5kmRLQoV0mIENgXL81mE"
                                 alt="Map Ping"
                             />
                         </div>
@@ -26,7 +26,7 @@ function HeroBanner() {
                                 GateKeeping LowKations 101
                             </h1>
                             <div className="description">
-                                <p className="into-para">
+                                <p className="intro-para">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In imperdiet sem a accumsan
                                     varius. Sed id laoreet sapien, ut
@@ -38,6 +38,13 @@ function HeroBanner() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="skyline-break">
+                    <img
+                        className="white-skyline"
+                        src=" https://drive.google.com/thumbnail?id=1pqGBPvJrXj11HlLHJ8FUvoeuBEhmijnx"
+                        alt="White CIty Skyline"
+                    />
                 </div>
             </div>
         </div>

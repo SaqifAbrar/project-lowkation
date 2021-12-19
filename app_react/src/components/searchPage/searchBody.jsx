@@ -1,19 +1,57 @@
-/*import React, { Component } from "react";
-import SearchCard from "./searchCard";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import Locations from "../../temp/locations.json";
+import Categories from "../../temp/categories.json";
+import SearchTable from "./searchTable";
+import TagTable from "./tagTable";
 import axios from "axios";
+import "./styles/searchBody.css";
 
-class SearchBody extends Component {
-    constructor() {
-        super();
-        this.state = {
-            categories: [],
-        };
-    }
+function SearchBody() {
+    const [field, setField] = useState("");
+    const [tag, setTag] = useState("");
+    const [locations, setLocations] = useState([]);
+    const location = useLocation();
+    console.log(location.pathname);
 
-    render() {
-        const { categories } = this.state;
-        return <div className="search-body-container"></div>;
-    }
+    useEffect(() => {
+        if (field.length !== 0 || tag.length !== 0) {
+            console.log("calling endpoint");
+            axios
+                .get(`/api/locations/search/?input=${field}&tag=${tag}`)
+                .then((res) => {
+                    if (res.data) {
+                        setLocations(res.data);
+                    }
+                });
+        }
+    });
+
+    return (
+        <div className="search-body-cotainer">
+            <form className="d-flex">
+                <input
+                    className="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    value={field}
+                    onChange={(e) => setField(e.target.value)}
+                />
+
+                <button
+                    className="btn btn-outline-success"
+                    type="submit"
+                    label="input"
+                    onClick={() => setTag("hello")}
+                >
+                    Search
+                </button>
+            </form>
+            {!locations && <SearchTable locations={Locations} />}
+            {!tag && <TagTable onChange={setTag} categories={Categories} />}
+        </div>
+    );
 }
 
-export default SearchBody;*/
+export default SearchBody;

@@ -2,13 +2,13 @@ const express = require("express");
 const dotenv = require("dotenv");
 const app = express();
 // const Locations = require('./firestoreClient')
-const locationController = require("./src/controllers/locationController");
+const router = require("./src/routes/locationRoutes");
 
 require("dotenv").config();
 app.use(express.json());
 
 // location routes
-app.use("/api/locations", locationController.locations);
+app.use("/api/locations", router);
 
 // app.get("/api/test", async (req, res) => {
 //     const data = {
