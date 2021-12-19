@@ -1,0 +1,46 @@
+.location-page-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.images-gallery {
+    width: 60%;
+    height: auto;
+}
+
+.gallery-image {
+    width: 100%;
+    object-fit: fill;
+}
+
+.text {
+    color: white;
+}
+
+.location-info {
+    width: 40%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.title-header {
+    width: 80%;
+}
+
+.interactions {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

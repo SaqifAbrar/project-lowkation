@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Image from "../../temp/test.jpeg";
 import TagBadge from "./tagBadge";
 import "./locationCard.css";
@@ -6,7 +7,7 @@ import "./locationCard.css";
 const LocationCard = ({ place, label }) => {
     console.log(label);
     return (
-        <div className={"location-card " + label}>
+        <Link to="/location" className={"location-card " + label}>
             <div className="location-image-container">
                 <img src={Image} alt="" className="location-image" />
             </div>
@@ -28,7 +29,7 @@ const LocationCard = ({ place, label }) => {
                     })}
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
