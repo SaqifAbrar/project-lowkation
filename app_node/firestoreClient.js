@@ -55,51 +55,44 @@ function searchBasedOffName(name) {
     console.log(locations)
   })
 
-<<<<<<< HEAD
-  return (locations)
-}
-
-
-=======
-    await firebaseFUCKING.getDocs(q).then((snapshot) => {
-        snapshot.docs.forEach((doc) => {
-            locations.push({ ...doc.data(), id: doc.id });
-        });
-        
+  await firebaseFUCKING.getDocs(q).then((snapshot) => {
+    snapshot.docs.forEach((doc) => {
+      locations.push({ ...doc.data(), id: doc.id });
     });
 
-    console.log(locations);
->>>>>>> 0bbc31f6b77007fcba15fd9c89996e1397080c06
+  });
 
-function addLocation(userComponent) {
-  // validateData(userComponent);
-  // let randomId = getRndInteger(1,1000000); 
-  //Make a check for if An id already exists.
-  // console.log(userComponent)
+  console.log(locations);
 
-  // addDoc(colRef, {
-  //   id: 4455,
-  //   name: userComponent.name,
-  //   address: userComponent.address,
-  //   description: userComponent.description,
-  //   tags: userComponent.tags,
-  //   city: userComponent.city,
-  //   founder: userComponent.founder,
-  //   rank: 0,
-  //   likes: 0,
-  //   category: userComponent.category
-  //   //actually make it randomly generated
-  //   //Also do not forget to add tags
+  function addLocation(userComponent) {
+    // validateData(userComponent);
+    // let randomId = getRndInteger(1,1000000); 
+    //Make a check for if An id already exists.
+    // console.log(userComponent)
 
-  // })
+    // addDoc(colRef, {
+    //   id: 4455,
+    //   name: userComponent.name,
+    //   address: userComponent.address,
+    //   description: userComponent.description,
+    //   tags: userComponent.tags,
+    //   city: userComponent.city,
+    //   founder: userComponent.founder,
+    //   rank: 0,
+    //   likes: 0,
+    //   category: userComponent.category
+    //   //actually make it randomly generated
+    //   //Also do not forget to add tags
 
-  //need to add location ID to the user id of locations visited array
-}
+    // })
 
-// getAllLocationsNoRank()
-// searchBasedOffName("RITZY HOUSE")
+    //need to add location ID to the user id of locations visited array
+  }
 
-module.exports = {
-  getAllLocationsNoRank,
-  searchBasedOffName
-};
+  // getAllLocationsNoRank()
+  // searchBasedOffName("RITZY HOUSE")
+
+  module.exports = {
+    getAllLocationsNoRank,
+    searchBasedOffName
+  };
