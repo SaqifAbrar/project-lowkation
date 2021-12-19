@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# ReadMe
+=======
 # 🌉 LowKations
 
 > "Low-key" - (Adjective) -  without seeking or receiving much attention or recognition
@@ -61,3 +64,4 @@ Resources may not be avaible after Map Hack 2021 judging (12/19/2021)
 | Rithik Choudhary | [rithik-c](https://github.com/rithik-c) | [rithik-c](https://www.linkedin.com/in/rithik-c/) |
 | Zaza Hashmi | [Kayeris](https://github.com/Kayeris) | [shaiza-hashmi](https://www.linkedin.com/in/shaiza-hashmi/) |
 | Ibrahim Rather | [irather](https://github.com/irather) | [ibrahim-rather](https://www.linkedin.com/in/ibrahim-rather/) |
+>>>>>>> d812c8f873c6aab4600e6735ccb94d3a70146b34
