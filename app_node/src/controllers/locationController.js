@@ -1,52 +1,21 @@
 const express = require("express");
 const locationData = require("../models/locations");
-// import { getAllLocationsNoRank } from "../models/locationDBQueries";
-const getAllLocationsNoRank = require("../models/locationDBQueries")
+const firestoreClient = require("../../firestoreClient")
 
-const locations = (req, res) => {
-    const data = locationData;
-    console.log("sending data");
-    // console.log(data);
-    // const data2 = getAllLocationsNoRank()
-    // .then((object)=>{
-    //     console.log(object)
-    // })
-    res.send(data);
-};
+const locations = async (req, res) => {
 
-module.exports = {
-    locations,
-};
-
-
-
-/*
-const express = require("express");
-const locationData = require("../models/locations");
-
-const locations = (req, res) => {
-    // const data = locationData;
-    console.log(locationData);
-    const data = getAllLocationsNoRank()
-    .then((object)=>{
-        console.log(object)
+    let realtimeLocation = {}
+     
+    const data = await firestoreClient()
+    .then((object) => {
+        realtimeLocation = object
     })
-
+        
+        
     console.log("sending data");
-    res.send(data);
-};
-
-const searchLocations = (req, res) => {
-    const search = req.query || req.body;
-    const field = search.input;
-
-    const data = locationData.filter((location) => location.name === field);
-
-    res.send(data);
+    res.send(realtimeLocation); 
 };
 
 module.exports = {
-    locations,
-    searchLocations,
+    locations
 };
-*/

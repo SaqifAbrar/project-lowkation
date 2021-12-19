@@ -40,11 +40,11 @@ async function getAllLocationsNoRank(){
     })
     .catch((err) => console.log(err.message))
     
-    console.log(locations)
+    // console.log(locations)
 
     return (locations);   
 }
 
-getAllLocationsNoRank()
+// getAllLocationsNoRank()
 
-module.exports = colRef;
+module.exports = getAllLocationsNoRank;
