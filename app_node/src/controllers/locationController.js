@@ -9,21 +9,22 @@ const locations = async (req, res) => {
     //     realtimeLocation = object;
     // });
 
-    const data = await firestoreClient.getAllLocationsNoRank()
+    const data = await firestoreClient
+        .getAllLocationsNoRank()
         .then((object) => {
-            realtimeLocation = object
-        })
+            realtimeLocation = object;
+        });
 
     res.send(realtimeLocation);
 };
 
-const searchLocations = (req, res) => {
+const searchLocations = async (req, res) => {
     const search = req.query || req.body;
     const field = search.input;
     // console.log(`HELLLLLLO ${search}`)
 
     // const data = locationData.filter((location) => location.name === field);
-    const data = firestoreClient.searchBasedOffName(field)
+    const data = await firestoreClient.searchBasedOffName(field);
 
     console.log("sending data");
     res.send(data);
@@ -31,5 +32,5 @@ const searchLocations = (req, res) => {
 
 module.exports = {
     locations,
-    searchLocations
+    searchLocations,
 };
