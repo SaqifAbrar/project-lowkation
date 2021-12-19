@@ -1,12 +1,11 @@
 import React from "react";
 import LocationCard from "../common/locationCard";
-import "./styles/searchTable.css";
 
-const SearchTable = ({ locations, label }) => {
+const LocationTable = ({ locations, label }) => {
     return (
-        <div className="search-row-container">
+        <div className="location-row-container">
             <p className="row-label">{label}</p>
-            <div className="search-row-wrapper">
+            <div className="location-row-wrapper">
                 {locations.map((location) => {
                     return (
                         <LocationCard
@@ -21,7 +20,4 @@ const SearchTable = ({ locations, label }) => {
     );
 };
 
-export default SearchTable;
-
-// if search state is not empty, then you will render this
-// map all locations here
+export default LocationTable;

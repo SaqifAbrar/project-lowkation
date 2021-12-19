@@ -27,3 +27,7 @@
     scroll-behavior: smooth;
     /* position: relative; */
 }
+
+a {
+    text-decoration: none; /* no underline */
+}
