@@ -48,15 +48,8 @@ async function searchBasedOffName(name) {
         snapshot.docs.forEach((doc) => {
             locations.push({ ...doc.data(), id: doc.id });
         });
-        // console.log(locations);
+        
     });
-
-    // firebaseFUCKING.onSnapshot(q, (snapshot) => {
-    //     snapshot.docs.forEach((doc) => {
-    //         locations.push({ ...doc.data(), id: doc.id });
-    //     });
-    //     console.log(locations);
-    // });
 
     console.log(locations);
 
