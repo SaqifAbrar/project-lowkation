@@ -28,7 +28,7 @@ function SearchBody() {
     });
 
     return (
-        <div className="search-body-cotainer">
+        <div className="search-body-container">
             <form className="d-flex">
                 <input
                     className="form-control me-2"
