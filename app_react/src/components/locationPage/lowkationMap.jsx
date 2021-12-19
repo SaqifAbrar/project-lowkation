@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./styles/lowkationMap.css";
-//import "../../../n";
 
 class LowkationMap extends Component {
     componentDidMount() {
@@ -18,7 +17,7 @@ class LowkationMap extends Component {
         const apiKey = process.env.REACT_APP_API_KEY;
         const apiURL = process.env.REACT_APP_API_URL;
 
-        console.log(process.env.NODE_ENV);
+        console.log(apiKey);
 
         loadScript(
             `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`

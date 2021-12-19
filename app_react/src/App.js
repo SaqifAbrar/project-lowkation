@@ -5,7 +5,6 @@ import FootBar from "./components/footbar";
 import Landing from "./components/homePage/landing";
 import Search from "./components/searchPage/search";
 import LowkationMap from "./components/locationPage/lowkationMap";
-
 import "./App.css";
 
 function App() {
