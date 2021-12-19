@@ -8,7 +8,6 @@ class Landing extends Component {
     render() {
         return (
             <div className="landing-body-container">
-                {/*<Link to="/home"></Link>*/}
                 <HeroBanner />
                 <LocationBody />
             </div>
