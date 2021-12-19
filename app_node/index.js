@@ -4,7 +4,8 @@ const app = express();
 // const Locations = require('./firestoreClient')
 const locationController = require("./src/controllers/locationController");
 
-app.use(express.json())
+require("dotenv").config();
+app.use(express.json());
 
 // location routes
 app.use("/api/locations", locationController.locations);

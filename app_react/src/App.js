@@ -5,7 +5,7 @@ import FootBar from "./components/footbar";
 import Location from "./components/location";
 import Landing from "./components/homePage/landing";
 import Search from "./components/searchPage/search";
-import Lowkation from "./components/locationPage/lowkation";
+import LowkationMap from "./components/locationPage/lowkationMap";
 import "./App.css";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
             <Routes>
                 <Route path="/home" element={<Landing />} />
                 <Route path="/search" element={<Search />} />
-                {/*<Route path="/location" element={<Lowkation />} />*/}
+                <Route path="/location" element={<LowkationMap />} />
                 <Route path="/" element={<Navigate replace to="/home" />} />
             </Routes>
             <FootBar />
