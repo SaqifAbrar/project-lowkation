@@ -1,17 +1,22 @@
 const express = require("express");
 const locationData = require("../models/locations");
-const firestoreClient = require("../../firestoreClient")
+const firestoreClient = require("../../firestoreClient");
 
 const locations = async (req, res) => {
+    let realtimeLocation = {};
+
+    const data = await firestoreClient().then((object) => {
+        realtimeLocation = object;
+    });
 
     let realtimeLocation = {}
-     
+
     const data = await firestoreClient.getAllLocationsNoRank()
-    .then((object) => {
-        realtimeLocation = object
-    })
-        
-    res.send(realtimeLocation); 
+        .then((object) => {
+            realtimeLocation = object
+        })
+
+    res.send(realtimeLocation);
 };
 
 const searchLocations = (req, res) => {
