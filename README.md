@@ -1,21 +1,20 @@
 # 🌉 LowKations
----
+
 > "Low-key" - (Adjective) -  without seeking or receiving much attention or recognition
-> Marriam Webster
 
 **LowKations** is a concept project that brings the best of the community together. From bustling cities to beautiful natural scenes, there's always an amazing spot that's only known to the people who's stumbled upon them. Really amazing unknown cafés, a nice spot by the creek or a great spot to see the city view; these are all locations that are "lowkey" and deserves some attention by adventure seekers ready to explore the world to the finest depths.
 
 ###### This project was made with love for Map Hacks 2021 ❤️
 
 ## ⬇️ Table of Contents
----
+
 * [Set-Up](#set-up)
 * [Display Examples](#display-examples)
 * [Resources](#resources)
 * [Collaborators](#collaborators)
 
 ## 🔨 Set-Up
----
+
 0. Prequisite Installs
     1. The latest LTS version of Node.js and npm
     2. Preferably an install of create-react-app
@@ -43,10 +42,10 @@
     3. http://localhost:3000/location navigates to location
 
 ## 💻  Display Examples
----
+
 
 ## 📄 Resources
----
+
 Resources may not be avaible after Map Hack 2021 judging (12/19/2021)
 * [GitHub](https://github.com/SaqifAbrar/project-lowkation) 
 * [DevPost](https://devpost.com/software/project-lowkey) 
@@ -54,7 +53,7 @@ Resources may not be avaible after Map Hack 2021 judging (12/19/2021)
 
 
 ## 👥 Collaborators
----
+
 | Name | GitHub | Linkedin |
 | ------ | ------ | ------ | 
 | Saqif Abrar| [saqifabrar](https://www.github.com/SaqifAbrar) | [saqifabrar](https://www.linkedin.com/in/saqifabrar/) |
