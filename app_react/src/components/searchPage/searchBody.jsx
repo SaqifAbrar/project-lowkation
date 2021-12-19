@@ -28,24 +28,24 @@ function SearchBody() {
     });
 
     return (
-        <div className="search-body-cotainer">
+        <div className="search-body-container">
             <form className="d-flex">
                 <input
-                    className="form-control me-2"
+                    className="form-control"
                     type="search"
-                    placeholder="Search"
+                    placeholder="Search for cafes, abandoned buildings, hidden nature spots, and more!"
                     aria-label="Search"
                     value={field}
                     onChange={(e) => setField(e.target.value)}
                 />
 
                 <button
-                    className="btn btn-outline-success"
+                    className="btn-success"
                     type="submit"
                     label="input"
                     onClick={() => setTag("hello")}
                 >
-                    Search
+                    Explore!
                 </button>
             </form>
             {!locations && <SearchTable locations={Locations} />}
