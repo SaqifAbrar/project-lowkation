@@ -1,45 +1,32 @@
 import React from "react";
-import SearchResults from "../searchResultsPage/searchResults";
-import { Link } from "react-router-dom";
 
-function SearchCard({ label }) {
+function SearchCard({ place, label }) {
     console.log(label);
-
-    const [isShow, setIsShow] = React.useState(true);
-
-    const handleClick = () => {
-        setIsShow(!isShow);
-    };
-
-    if (!isShow) {
-        return (
-            <div className={label}>
-                {/*<div className="location-image-container">
-        <img src={Image} alt="" className="location-image" />
-</div>*/}
-                <SearchResults />
-
-                <div className="category-info-container">
-                    <button className="category-name" onClick={handleClick}>
-                        {label}
-                    </button>
-                </div>
-            </div>
-        );
-    } else {
-        return (
-            <div className={label}>
-                {/*<div className="location-image-container">
-            <img src={Image} alt="" className="location-image" />
+    return (
+        <div className={"search-card " + label}>
+            {/*<div className="location-image-container">
+                <img src={Image} alt="" className="location-image" />
     </div>*/}
-                <div className="category-info-container">
-                    <button className="category-name" onClick={handleClick}>
-                        {label}
-                    </button>
-                </div>
+            <div className="search-info-container">
+                <p className="location-name">{place.name}</p>
+                <p className="location-address">{place.address}</p>
+                <p className="location-description">{place.description}</p>
+                {/*<div className="location-tag-container">
+                    {place.tags.map((tag) => {
+                        return (
+                            <TagBadge
+                                tag={tag}
+                                key={
+                                    Date.now() +
+                                    Math.floor(Math.random() * 100000)
+                                }
+                            />
+                        );
+                    })}
+                </div>*/}
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default SearchCard;

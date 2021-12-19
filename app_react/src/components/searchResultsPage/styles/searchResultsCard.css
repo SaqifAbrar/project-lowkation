@@ -1,0 +1,60 @@
+.searchResults-card {
+    --location-info-space: 5%;
+}
+
+.searchResults-card {
+    width: 15%; /* add clamp */
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 15px;
+    color: black;
+}
+
+.searchResults-info-container {
+    width: auto;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+.location-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.location-info-container {
+    width: auto;
+    margin: 15px;
+}
+
+.location-name {
+    font-family: var(--main-header-font);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.location-place {
+    font-family: var(--main-text-font);
+}
+
+.location-description {
+    padding-top: var(--location-info-space);
+    font-family: var(--main-text-font);
+    font-size: 13px;
+}
+
+.location-tag-container {
+    width: auto;
+    display: flex;
+    padding-top: var(--location-info-space);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.results {
+    background: var(--top-locations-color);
+}

@@ -36,7 +36,17 @@ const locations = (req, res) => {
     res.send(data);
 };
 
+const searchLocations = (req, res) => {
+    const search = req.query || req.body;
+    const field = search.input;
+
+    const data = locationData.filter((location) => location.name === field);
+
+    res.send(data);
+};
+
 module.exports = {
     locations,
+    searchLocations,
 };
 */
