@@ -2,10 +2,9 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/navbar";
 import FootBar from "./components/footbar";
-import Location from "./components/location";
 import Landing from "./components/homePage/landing";
 import Search from "./components/searchPage/search";
-import Lowkation from "./components/locationPage/lowkation";
+//import Lowkation from "./components/locationPage/lowkation";
 import "./App.css";
 
 function App() {
