@@ -1,9 +1,11 @@
 
 
-import {getAllLocations, categoryBasedSearch, searchTags, searchBasedOffName, cityBasedSearch, topLocations} from './locationDBQueries.js'
+import {getAllLocations, categoryBasedSearch, searchTags, searchBasedOffName, cityBasedSearch, topLocations, validateData, addLocation, getAllLocationsNoRank} from './locationDBQueries.js'
 
-let results = getAllLocations(0);
-results.then((object) => {
-    console.log((object));
-})
+// let results = getAllLocationsNoRank();
+// results.then((object) => {
+//     console.log((object));
+// })
+// console.log(results);
 
+// getAllLocations(5); 

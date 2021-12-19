@@ -1,10 +1,26 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const app = express();
-const locationRoutes = require("./src/routes/locationRoutes");
+// const Locations = require('./firestoreClient')
+const locationController = require("./src/controllers/locationController");
+
+app.use(express.json())
 
 // location routes
-app.use("/api/locations", locationRoutes);
+app.use("/api/locations", locationController.locations);
+
+// app.get("/api/test", async (req, res) => {
+//     const data = {
+//         id: 69,
+//         name: "Reynolds Building",
+//         address: "420 Alumni Walk",
+//         description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim dictum sem, vitae gravida ante semper versatility.",
+//         tags: ["Lorem", "Ipsum", "Dolar"],
+//     };
+//     await Locations.add(data);
+//     res.send("bing bong");
+// })
 
 const port = process.env.PORT || 5000;
 app.listen(port, () =>
