@@ -1,11 +1,12 @@
 import React from "react";
 import TagCard from "./tagCard";
+import "./styles/tagTable.css";
 
 const TagTable = ({ categories, label }) => {
     return (
-        <div className="tag-row-container">
-            <p className="row-label">{label}</p>
-            <div className="tag-row-wrapper">
+        <div className="tag-table-container">
+            {/*<p className="row-label">{label}</p>*/}
+            <div className="tag-table-wrapper">
                 {categories.map((category) => {
                     return (
                         <TagCard

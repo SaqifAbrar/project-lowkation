@@ -1,7 +1,7 @@
 .tag-badge {
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
-    padding: 2.5% 5%;
+    padding: 0% 5%;
     font-size: 13px;
     border-radius: 15px;
 }

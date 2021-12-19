@@ -1,0 +1,11 @@
+.tag-table-container {
+    height: 90vh;
+}
+
+.tag-table-wrapper {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+}

@@ -2,16 +2,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/footbar.css";
 
-function FootBar() {
+function NavBar() {
     return (
-        <nav className="footbar">
+        <nav>
             <div className="footbar">
-                <Link to="/home" className="navbar-brand">
-                    GateKeep tm
-                </Link>
+                <div className="logo-section">
+                    <img
+                        className="logo"
+                        src=" https://drive.google.com/thumbnail?id=1U4CVwgL9seUvaw_1TCoiSh9iDUjcUHL9"
+                        alt="LOGO"
+                    />
+                </div>
+
+                {/* add logos leading to socials */}
+                <div className="link-section">
+                    <Link to="/search" className="navbar-links">
+                        social
+                    </Link>
+                    <Link to="/signin" className="navbar-links">
+                    icons
+                    </Link>
+                </div>
             </div>
         </nav>
     );
 }
 
-export default FootBar;
+export default NavBar;
