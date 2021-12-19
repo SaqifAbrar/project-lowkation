@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ReadMe
 =======
 # 🌉 LowKations
@@ -45,7 +44,7 @@
     3. http://localhost:3000/location navigates to location
 
 ## 💻  Display Examples
-
+![lowkations home page](https://github.com/SaqifAbrar/project-lowkation/blob/main/readme_resources/browser-homepage-example.gif)
 
 ## 📄 Resources
 
@@ -64,4 +63,3 @@ Resources may not be avaible after Map Hack 2021 judging (12/19/2021)
 | Rithik Choudhary | [rithik-c](https://github.com/rithik-c) | [rithik-c](https://www.linkedin.com/in/rithik-c/) |
 | Zaza Hashmi | [Kayeris](https://github.com/Kayeris) | [shaiza-hashmi](https://www.linkedin.com/in/shaiza-hashmi/) |
 | Ibrahim Rather | [irather](https://github.com/irather) | [ibrahim-rather](https://www.linkedin.com/in/ibrahim-rather/) |
->>>>>>> d812c8f873c6aab4600e6735ccb94d3a70146b34
