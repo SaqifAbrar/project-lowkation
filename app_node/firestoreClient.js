@@ -1,5 +1,5 @@
 const admin = require('firebase/app');
-const firebaseFUCKING = require('firebase/firestore/lite')
+const firebaseFUCKING = require('firebase/firestore')
 
 
 
@@ -35,16 +35,33 @@ async function getAllLocationsNoRank(){
             }
        })
 
-    // console.log(snapshot);
      
     })
     .catch((err) => console.log(err.message))
     
-    // console.log(locations)
+    console.log(locations)
 
     return (locations);   
 }
 
-// getAllLocationsNoRank()
 
-module.exports = getAllLocationsNoRank;
+function searchBasedOffName (name) {
+    const q = firebaseFUCKING.query(colRef, firebaseFUCKING.where("name", "==", name.toLowerCase()))
+    let locations = []
+    firebaseFUCKING.onSnapshot(q, (snapshot) => {
+        snapshot.docs.forEach((doc) => {
+                locations.push({...doc.data(), id: doc.id})
+        })
+        console.log(locations)
+    })
+
+    return(locations)
+}
+
+// getAllLocationsNoRank()
+// searchBasedOffName("RITZY HOUSE")
+
+module.exports = {
+  getAllLocationsNoRank,
+  searchBasedOffName
+};

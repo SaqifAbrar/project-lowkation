@@ -1,6 +1,6 @@
 .location-row-container {
     width: 100%;
-    margin: 5% 0px;
+    margin: 2% 0px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -12,4 +12,28 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 3%;
+}
+
+.top-locations-header {
+    margin-left: 2%; /* the title stuff*/
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Advent Pro;
+    color: var(--top-locations-color);
+}
+
+.recommended-locations-header {
+    margin-left: 2%;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Advent Pro;
+    color: var(--recommended-locations-color);
+}
+
+.viewed-locations-header {
+    margin-left: 2%;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Advent Pro;
+    color: var(--viewed-locations-color);
 }
