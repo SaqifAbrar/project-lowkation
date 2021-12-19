@@ -1,5 +1,6 @@
 import React from "react";
 import LocationCard from "../common/locationCard";
+import "./styles/searchTable.css";
 
 const SearchTable = ({ locations, label }) => {
     return (

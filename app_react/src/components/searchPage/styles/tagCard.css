@@ -4,4 +4,7 @@
     border-color: white;
     border-width: 1px;
     border-radius: 15px;
+    background-image: url(https://drive.google.com/thumbnail?id=1hNKxKFApHSalruDzh9JiZocF4JYgpGI2);
+    background-size: cover;
+    background-blend-mode: darken;
 }
