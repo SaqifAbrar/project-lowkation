@@ -10,3 +10,5 @@ module.exports = function (app) {
     app.use("/categories", categories);
     app.use("/locations", locations);
 };
+
+
