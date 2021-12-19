@@ -1,5 +1,5 @@
 const admin = require("firebase/app");
-const firebaseFUCKING = require("firebase/firestore");
+const firebaseFunction = require("firebase/firestore");
 
 const firebaseConfig = {
   apiKey: "AIzaSyAhr2L_E6l5M9DfcaY6ASPZ_8tY_wvf7vo",
@@ -11,15 +11,15 @@ const firebaseConfig = {
 };
 
 const app = admin.initializeApp(firebaseConfig);
-const db = firebaseFUCKING.getFirestore(app);
+const db = firebaseFunction.getFirestore(app);
 
-const colRef = firebaseFUCKING.collection(db, "Location");
+const colRef = firebaseFunction.collection(db, "Location");
 
 async function getAllLocationsNoRank() {
   let locations = new Array();
   let userRank = 10;
 
-  await firebaseFUCKING
+  await firebaseFunction
     .getDocs(colRef)
     .then((snapshot) => {
       snapshot.docs.forEach((doc) => {
@@ -39,12 +39,12 @@ async function searchBasedOffName(name) {
   let locations = new Array();
   let userRank = 10;
 
-  const q = firebaseFUCKING.query(
+  const q = firebaseFunction.query(
     colRef,
-    firebaseFUCKING.where("name", "==", name.toLowerCase())
+    firebaseFunction.where("name", "==", name.toLowerCase())
   );
 
-  await firebaseFUCKING.getDocs(q).then((snapshot) => {
+  await firebaseFunction.getDocs(q).then((snapshot) => {
     snapshot.docs.forEach((doc) => {
       locations.push({ ...doc.data(), id: doc.id });
     });
