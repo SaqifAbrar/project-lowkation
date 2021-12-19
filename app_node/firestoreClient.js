@@ -55,10 +55,21 @@ function searchBasedOffName(name) {
     console.log(locations)
   })
 
+<<<<<<< HEAD
   return (locations)
 }
 
 
+=======
+    await firebaseFUCKING.getDocs(q).then((snapshot) => {
+        snapshot.docs.forEach((doc) => {
+            locations.push({ ...doc.data(), id: doc.id });
+        });
+        
+    });
+
+    console.log(locations);
+>>>>>>> 0bbc31f6b77007fcba15fd9c89996e1397080c06
 
 function addLocation(userComponent) {
   // validateData(userComponent);
