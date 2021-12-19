@@ -1,9 +1,9 @@
 .tag-table-container {
     height: 90vh;
-    padding-top: 2%;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-bottom: 2%;
+    padding: 2%;
+    /*padding-right: 3%;
+    padding-left: 3%;*/
+    /* padding-bottom: 2%; */
 }
 
 .tag-table-wrapper {

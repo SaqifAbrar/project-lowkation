@@ -1,4 +1,26 @@
 .search-body-container {
     color: white;
     padding-top: 2%;
+    font-size: xx-large;
+    font-style: normal;
+    font-family: Advent Pro;
+}
+
+.form-control {
+    background-color: #e5e5e5;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 80%;
+    height: auto;
+    padding: 0.5%;
+    font-style: italic;
+}
+
+.btn-success {
+    color: #e5e5e5;
+    background-color: #982525;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: auto;
+    padding: 0.5%;
 }
