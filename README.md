@@ -11,7 +11,7 @@
 
 * [Set-Up](#set-up)
 * [Display Examples](#display-examples)
-* [Resources](#resources)
+* [Resources](#-resources)
 * [Collaborators](#collaborators)
 
 ## 🔨 Set-Up
