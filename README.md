@@ -5,6 +5,7 @@
 **LowKations** is a concept project that brings the best of the community together. From bustling cities to beautiful natural scenes, there's always an amazing spot that's only known to the people who's stumbled upon them. Really amazing unknown cafés, a nice spot by the creek or a great spot to see the city view; these are all locations that are "lowkey" and deserves some attention by adventure seekers ready to explore the world to the finest depths.
 
 ###### This project was made with love for Map Hacks 2021 ❤️
+###### Also, we won first place and the real trophy is that we learned a lot 🏆 
 
 ## ⬇️ Table of Contents
 
