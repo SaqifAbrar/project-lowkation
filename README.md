@@ -9,10 +9,10 @@
 
 ## ⬇️ Table of Contents
 
-* [Set-Up](#set-up)
-* [Display Examples](#display-examples)
+* [Set-Up](#-set-up)
+* [Display Examples](#--display-examples)
 * [Resources](#-resources)
-* [Collaborators](#collaborators)
+* [Collaborators](#-collaborators)
 
 ## 🔨 Set-Up
 
